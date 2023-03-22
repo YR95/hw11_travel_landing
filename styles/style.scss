@@ -68,6 +68,22 @@ $font-family-Roboto: 'Roboto Slab', serif;
   }
 
 
+  &--isWhiteBG {
+    background: no-repeat url("/icons/mountain.svg");
+    background-size: cover
+  }
+
+  &--isWhiteBG > p, ul > li > a {
+    color: $grey-color;
+  }
+
+  &--isWhiteBG > ul > li > img {
+    filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
+  }
+}
+
+.svg {
+  fill: orange;
 }
 
 .navigation > li > a {
@@ -212,28 +228,32 @@ $font-family-Roboto: 'Roboto Slab', serif;
 
 .pictures {
   @include flex(flex, column, space-between, center);
-  margin: 3%;
-  gap: 40px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  //gap: 40px;
 
   &__header {
     @include font_settings($font-family-Roboto, 56px, 700);
     color: $grey-color;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 2%;
   }
 
+  &--isGreenBG {
+    background: no-repeat url("/icons/green_bg.svg");
+    background-size: cover;
+  }
 }
 
 .lists {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  margin-right: 3%;
-  margin-left: 3%;
 }
 
 .items {
   position: relative;
+  margin: 30px 30px 50px 30px;
 
   &__info {
     @include font_settings($font-family-Roboto, 18px, 400);
@@ -246,6 +266,10 @@ $font-family-Roboto: 'Roboto Slab', serif;
 
   &__icon {
     max-width: 342px;
+
+    &--isSmaller {
+      max-width: 294px;
+    }
   }
 }
 
@@ -259,7 +283,12 @@ $font-family-Roboto: 'Roboto Slab', serif;
     text-align: center;
     text-transform: uppercase;
   }
-  &__button{
+
+  &__button {
     padding: 15px 30px;
   }
 }
+
+//.Test{
+//  filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
+
