@@ -173,7 +173,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
   background: no-repeat url("/icons/barcelona.svg");
   background-size: cover;
   @include flex(flex, column, center, center);
-  padding: 6%;
+  padding: 4%;
   margin-top: 3%;
   gap: 30px;
 
@@ -195,14 +195,71 @@ $font-family-Roboto: 'Roboto Slab', serif;
     color: $white-color;
 
   }
+
   &__text2 {
     @include font_settings($font-family-Quick, 28px, 500);
     color: $white-color;
     text-align: center;
     border-bottom: white solid 2px;
     text-transform: uppercase;
+    margin-top: 2%;
+  }
+
+  &__button {
+    margin-top: 3%;
+  }
+}
+
+.pictures {
+  @include flex(flex, column, space-between, center);
+  margin: 3%;
+  gap: 40px;
+
+  &__header {
+    @include font_settings($font-family-Roboto, 56px, 700);
+    color: $grey-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.items {
+  position: relative;
+
+  &__info {
+    @include font_settings($font-family-Roboto, 18px, 400);
+    color: $white-color;
+    background: $grey-color;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  &__icon {
+    max-width: 342px;
+  }
+}
+
+.view {
+  @include flex(flex, column, center, center);
+  gap: 20px;
+
+  &__info {
+    @include font_settings($font-family-Quick, 14px, 500);
+    color: $grey-color;
+    text-align: center;
+    text-transform: uppercase;
   }
   &__button{
-    margin-top: 5%;
+    padding: 15px 30px;
   }
 }
