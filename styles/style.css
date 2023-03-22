@@ -173,7 +173,47 @@
 
 .trip-section {
   background: no-repeat url("/icons/barcelona.svg");
-  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  margin-top: 3%;
+  gap: 30px;
+}
+.trip-section__header {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+}
+.trip-section__info {
+  font-family: "Roboto Slab", serif;
+  font-size: 144px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.trip-section__text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.trip-section__text2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: white solid 2px;
+  text-transform: uppercase;
+}
+.trip-section__button {
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

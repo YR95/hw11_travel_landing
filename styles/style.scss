@@ -132,7 +132,6 @@ $font-family-Roboto: 'Roboto Slab', serif;
 }
 
 .list {
-  //@include flex(flex, row, space-around, center);
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -170,7 +169,40 @@ $font-family-Roboto: 'Roboto Slab', serif;
   @include flex(flex, column, normal, center);
 }
 
-.trip-section{
+.trip-section {
   background: no-repeat url("/icons/barcelona.svg");
-  background-size: 100%;
+  background-size: cover;
+  @include flex(flex, column, center, center);
+  padding: 6%;
+  margin-top: 3%;
+  gap: 30px;
+
+  &__header {
+    @include font_settings($font-family-Roboto, 56px, 700);
+    color: $white-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    @include font_settings($font-family-Roboto, 144px, 700);
+    color: $white-color;
+    text-align: center;
+  }
+
+  &__text {
+    @include font_settings($font-family-Quick, 24px, 400);
+    color: $white-color;
+
+  }
+  &__text2 {
+    @include font_settings($font-family-Quick, 28px, 500);
+    color: $white-color;
+    text-align: center;
+    border-bottom: white solid 2px;
+    text-transform: uppercase;
+  }
+  &__button{
+    margin-top: 5%;
+  }
 }
