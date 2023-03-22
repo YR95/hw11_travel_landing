@@ -99,6 +99,9 @@ $font-family-Roboto: 'Roboto Slab', serif;
   &__header {
     @include font_settings($font-family-Lora, 84px, 700);
     color: $white-color-op;
+    padding: 2%;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   &__info {
