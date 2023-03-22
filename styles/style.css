@@ -6,7 +6,7 @@
 }
 
 .first-block {
-  background: no-repeat url("/icons/bg.png");
+  background: no-repeat url("../icons/bg.png");
   background-size: 100%;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
   gap: 20px;
 }
 .menu--isWhiteBG {
-  background: no-repeat url("/icons/mountain.svg");
+  background: no-repeat url("../icons/mountain.svg");
   background-size: cover;
 }
 .menu--isWhiteBG > p, .menu--isWhiteBG > ul > li > a {
@@ -181,7 +181,7 @@
 }
 
 .trip-section {
-  background: no-repeat url("/icons/barcelona.svg");
+  background: no-repeat url("../icons/barcelona.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -243,7 +243,7 @@
   padding-top: 2%;
 }
 .pictures--isGreenBG {
-  background: no-repeat url("/icons/green_bg.svg");
+  background: no-repeat url("../icons/green_bg.svg");
   background-size: cover;
 }
 

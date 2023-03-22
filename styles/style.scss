@@ -30,7 +30,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
 }
 
 .first-block {
-  background: no-repeat url("/icons/bg.png");
+  background: no-repeat url("../icons/bg.png");
   background-size: 100%;
   @include flex(flex, column, space-around, center);
 }
@@ -69,7 +69,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
 
 
   &--isWhiteBG {
-    background: no-repeat url("/icons/mountain.svg");
+    background: no-repeat url("../icons/mountain.svg");
     background-size: cover
   }
 
@@ -179,7 +179,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
 }
 
 .trip-section {
-  background: no-repeat url("/icons/barcelona.svg");
+  background: no-repeat url("../icons/barcelona.svg");
   background-size: cover;
   @include flex(flex, column, center, center);
   padding: 4%;
@@ -232,7 +232,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
   }
 
   &--isGreenBG {
-    background: no-repeat url("/icons/green_bg.svg");
+    background: no-repeat url("../icons/green_bg.svg");
     background-size: cover;
   }
 }
