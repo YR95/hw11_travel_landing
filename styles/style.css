@@ -62,15 +62,11 @@
   background: no-repeat url("/icons/mountain.svg");
   background-size: cover;
 }
-.menu--isWhiteBG > p, .menu ul > li > a {
+.menu--isWhiteBG > p, .menu--isWhiteBG > ul > li > a {
   color: rgb(51, 51, 51);
 }
 .menu--isWhiteBG > ul > li > img {
   filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
-}
-
-.svg {
-  fill: orange;
 }
 
 .navigation > li > a {

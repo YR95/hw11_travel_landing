@@ -42,7 +42,7 @@ $font-family-Roboto: 'Roboto Slab', serif;
 
   &__logo {
     @include font_settings($font-family-Roboto, 32px, 700);
-    color: $white-color-op;
+    color: $white-color;
   }
 
   &__navigation {
@@ -73,17 +73,13 @@ $font-family-Roboto: 'Roboto Slab', serif;
     background-size: cover
   }
 
-  &--isWhiteBG > p, ul > li > a {
+  &--isWhiteBG > p, &--isWhiteBG > ul > li > a {
     color: $grey-color;
   }
 
   &--isWhiteBG > ul > li > img {
     filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
   }
-}
-
-.svg {
-  fill: orange;
 }
 
 .navigation > li > a {
@@ -288,7 +284,3 @@ $font-family-Roboto: 'Roboto Slab', serif;
     padding: 15px 30px;
   }
 }
-
-//.Test{
-//  filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
-
