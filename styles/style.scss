@@ -77,8 +77,8 @@ $font-family-Roboto: 'Roboto Slab', serif;
     color: $grey-color;
   }
 
-  &--isWhiteBG > ul > li > img {
-    filter: invert(12%) sepia(11%) saturate(21%) hue-rotate(348deg) brightness(95%) contrast(79%);
+  &--isWhiteBG > ul > li > svg {
+    fill: $grey-color;
   }
 }
 
